@@ -1,24 +1,52 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.2;
+}
+
+header,footer {
+  background-image: url(./image/rigging-918920_1920.jpg);
+}
+
+h1 {
+  text-align: center;
+  padding:25px;
+  color:white;
+  text-shadow: 2px 2px 4px #0C2D48;
+}
+
+p {
+  text-align:center;
+  padding:2px;
+  color:white;
+  text-shadow: 2px 2px 4px #0C2D48;
 }
 
 textarea{
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: #0C2D48;
+  border-left: .5px solid #0C2D48;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: #0C2D48;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #0C2D48;
+}
+.jumbotron-bottom {
+  text-align: center;
+  color: #0C2D48;
+  border-radius: 0;
+  border-top: 10px solid #0C2D48;
+}
+
+.container {
+  padding-bottom:10px;
 }
 
 .description{
@@ -33,13 +61,13 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: .5px solid white;;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: #0C2D48;
+  border-top: 1px dashed #0C2D48;
 }
 
 .past {
@@ -53,15 +81,15 @@ textarea{
 }
 
 .future {
-  background-color: #77dd77 !important;
+  background-color:#B1D4E0 !important;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-left: .5px solid #0C2D48;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color:#2E8BC0;
   color: white;
 }
 
@@ -69,12 +97,16 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
- 
 
 .lock {
   text-align: left;
   padding:10px !important;
-  color:black;
+  color:#0C2D48;
 } 
 
- 
+ #copyright {
+   color:white;
+   text-shadow: 2px 2px 4px #0C2D48;
+   font-size: 20px;
+   padding:25px;
+ }
