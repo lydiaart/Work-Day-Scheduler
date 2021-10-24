@@ -19,8 +19,6 @@ Thank you and enjoy!
 
 ## Usage
 
-This webpage is to help people who needs new passwords.
-
 The following image demonstrates the web application's appearance and functionality:
 <img src="./assets/image/WDS-1.png" alt="Work-day-scheduler-1"/>
 <img src="./assets/image/WDS-2.png" alt="Work-day-scheduler-2"/>
