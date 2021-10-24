@@ -34,4 +34,5 @@ var hours = [
     {
         text: "5PM",
         mltime: 17
-    }]
+    }
+]
