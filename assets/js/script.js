@@ -3,7 +3,7 @@ console.log(currentHour)
 var currentDay = $("#currentDay")
 currentDay.html(`<u>${moment().format("dddd, MMMM Do YYYY")}</u>`)
 var container = $(".container")
- 
+var events = JSON.parse(localStorage.getItem("events")) ||  []
 
 var hours = [
     {
@@ -44,6 +44,10 @@ var hours = [
     }]
 
 for (let i = 0; i < 9; i++) {
+
+
+
+
     var timeStatus = ""
     if (hours[i].mltime < currentHour) {
         timeStatus = "past"
@@ -68,11 +72,17 @@ var saveBtn = $(".saveBtn")
 
 saveBtn.on("click",function(){
      var dataId = $(this).attr("data-id")
-     console.log(dataId)
+     console.log("#" + dataId)
      
      var textArea = $("#" + dataId)
 
      console.log(textArea.val(),dataId)
+     events.push({
+         event:textArea.val(),
+         dataId:dataId
+     })
+
+     localStorage.setItem("events",JSON.stringify(events))
 
 })
 
