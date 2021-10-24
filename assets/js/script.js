@@ -47,7 +47,6 @@ for (let i = 0; i < 9; i++) {
 
 
 
-
     var timeStatus = ""
     if (hours[i].mltime < currentHour) {
         timeStatus = "past"
@@ -66,7 +65,23 @@ for (let i = 0; i < 9; i++) {
 
   </div>`)
 
+  
 }
+
+
+
+for (let i = 0; i < 9; i++) {
+    if(events[i]){
+        var id = events[i].dataId
+        var eventName = events[i].event
+      //$("#10") <=> document.querySector("#10")
+        $("#" + id).val(eventName)
+      }
+    
+    
+}
+
+
 
 var saveBtn = $(".saveBtn")
 
