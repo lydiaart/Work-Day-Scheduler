@@ -1,6 +1,6 @@
 var currentHour = moment().hour()
 var currentDay = $("#currentDay")
-currentDay.html(`<u>${moment().format("dddd, MMMM Do YYYY")}</u>`)
+currentDay.html(`<u>${moment().format("MMMM Do YYYY, h:mm:ss a")}</u>`)
 var container = $(".container")
 
 
